@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CTPD ASSIGNMENT GROUP 6</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>GROUP 6</h1>
+<h1>Quiz Test</h1>
+
+<div class="top-bar">
+    <div class="turn-box">Turn: <span id="turn">A</span></div>
+    <button onclick="resetGame()">Reset</button>
+</div>
+
+<div class="question-box">
+    <h2 id="question">Click Start to Begin</h2>
+    <div class="controls">
+        <button onclick="startGame()">Start</button>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+</div>
+
+<div class="scoreboard">
+
+    <div class="group" id="A">
+        <h3>Group A</h3>
+        <p id="scoreA">0</p>
+        <button onclick="markCorrect('A')">Correct</button>
+        <button onclick="markWrong()">Wrong</button>
+    </div>
+
+    <div class="group" id="B">
+        <h3>Group B</h3>
+        <p id="scoreB">0</p>
+        <button onclick="markCorrect('B')">Correct</button>
+        <button onclick="markWrong()">Wrong</button>
+    </div>
+
+    <div class="group" id="C">
+        <h3>Group C</h3>
+        <p id="scoreC">0</p>
+        <button onclick="markCorrect('C')">Correct</button>
+        <button onclick="markWrong()">Wrong</button>
+    </div>
+
+    <div class="group" id="D">
+        <h3>Group D</h3>
+        <p id="scoreD">0</p>
+        <button onclick="markCorrect('D')">Correct</button>
+        <button onclick="markWrong()">Wrong</button>
+    </div>
+
+</div>
+
+<h2 id="winner"></h2>
+
+<script src="script.js"></script>
+</body>
+</html>
